@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Business website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="style.css">
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9314d6553e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <div class="navigation-container">
+            <div class="top-head">
+                <div class="web-name">
+                    <h1>TECHNEWS</h1>
+                </div>
+
+                <div class="ham-btn">
+                    <span><i class= "fas fa-bars"></i></span>
+                </div>
+
+                <div class="times-btn">
+                    <span><i class = "fas fa-times"></i></span>
+                </div>
+            </div>
+
+            <!--nav bar-->
+
+            <div class="nav-bar" id="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../services/service.html">Services</a></li>
+                        <li><a href="../projects/Web-student-17-6-main/projects.html">Projects</a></li>
+                        <li><a href="../news/index.html">News</a></li>
+                        <li><a href="../about/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--social icons-->
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class = "fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class='banner'>
+        <div class="banner-main-content">
+            <h2>GET THE WORLD'S LATEST BUSINESS NEWS</h2>
+            <h3>World's Leading Business Service</h3>
+
+
+            <button>
+                        <a href= "#">Know More</a>
+                    </button>
+
+            <div class="current-news-head">
+                <h3>Business development is a set of tasks and processes meant to develop and implement growth opportunities within (and between) organizations in a sustainable and profitable way by <span>Developers</span></h3>
+
+                <h3>Marketing is a business term that experts have defined in dozens of different ways. In fact, even at company level people may perceive the term differently.<span>Sales Managers</span></h3>
+
+                <h3>Business Design applies design and design thinking to business problems with the objective of bringing innovation to life.<span>Designers</span></h3>
+
+                <h3>Printing Business - a company that does commercial printing printing company, printing concern company - an institution created to conduct business.<span>Printers</span></h3>
+            </div>
+        </div>
+
+        <div class="banner-sub-content">
+            <div class="hot-topic">
+                <img src="images/banner-1.jpg" alt="">
+
+                <div class="hot-topic-content">
+                    <h2>Development-85%</h2>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+
+            <div class="hot-topic">
+                <img src="images/banner-2.jpg" alt="">
+
+                <div class="hot-topic-content">
+                    <h2>Marketing-65%</h2>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+
+            <div class="hot-topic">
+                <img src="images/banner-3.jpg" alt="">
+
+                <div class="hot-topic-content">
+                    <h2>Design-80%</h2>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+
+            <div class="hot-topic">
+                <img src="images/banner-4.jpg" alt="">
+
+                <div class="hot-topic-content">
+                    <h2>Print-90%</h2>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---Acheivements-->
+
+    <div class="heading">
+        <h1>Agency Acheivements</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3 class="title">Web Development</h3>
+            <span class="counter">1250</span>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3 class="title">Web Design</h3>
+            <span class="counter">350</span>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3 class="title">graphic design</h3>
+            <span class="counter">800</span>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3 class="title">Seo Marketing</h3>
+            <span class="counter">1390</span>
+        </div>
+    </div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.counter').each(function() {
+
+                $(this).prop('Counter', 0).animate({
+
+                    Counter: $(this).text()
+
+                }, {
+                    duration: 3500,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now) + '+');
+
+                    }
+                })
+            });
+        });
+    </script>
+
+
+    <!--Our team-->
+
+    <div class="wrapper">
+        <h1>Our Team</h1>
+
+        <div class="team">
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images/gent-1.jpg" alt="team_member_image">
+                </div>
+                <h3>Paul Doe</h3>
+                <p class="role">Business Developer</p>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.Lorem ipsum text is a scrambled version of a passage in classical Latin derived from the Marcus Tullius Cicero's treatise on
+                    ethics.
+                </p>
+            </div>
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images/wom-2.jpg" alt="team_member_image">
+                </div>
+                <h3>Rosie Meg</h3>
+                <p class="role">Sales Manager</p>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.Lorem ipsum text is a scrambled version of a passage in classical Latin derived from the Marcus Tullius Cicero's treatise on
+                    ethics.
+                </p>
+            </div>
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images/gent-2.jpg" alt="team_member_image">
+                </div>
+                <h3>Joseph Daemon</h3>
+                <p class="role">Designer</p>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.Lorem ipsum text is a scrambled version of a passage in classical Latin derived from the Marcus Tullius Cicero's treatise on
+                    ethics.
+                </p>
+            </div>
+
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images/gent-3.jpg" alt="team_member_image">
+                </div>
+                <h3>Alex Wood</h3>
+                <p class="role">Printer</p>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.Lorem ipsum text is a scrambled version of a passage in classical Latin derived from the Marcus Tullius Cicero's treatise on
+                    ethics.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Work-->
+
+    <div class="container">
+        <h1>What we do?</h1>
+
+        <div class="gallery">
+            <img src="images/1.jpg">
+            <div class="desc">
+                <p>Web Development</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/2.jpg">
+            <div class="desc">
+                <p>App Development</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/4.jpg">
+            <div class="desc">
+                <p>Business Development</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/1.jpg">
+            <div class="desc">
+                <p>Marketing</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/2.jpg">
+            <div class="desc">
+                <p>Designing</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/4.jpg">
+            <div class="desc">
+                <p>Printing</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects-->
+
+    <div class="heading1">
+        <h1>Team Projects</h1>
+    </div>
+
+    <div class="team-area">
+        <div class="single-team">
+            <img src="images/clock1.jpg" alt="">
+            <div class="team-text">
+                <h2>Clean Watch</h2>
+                <p>Client TreeKode</p>
+                <p>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </p>
+            </div>
+        </div>
+
+        <div class="single-team">
+            <img src="images/phone.jpg" alt="">
+            <div class="team-text">
+                <h2>Lightning Upgrade</h2>
+                <p>WordPress/Photoshop</p>
+                <p>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </p>
+            </div>
+        </div>
+
+        <div class="single-team">
+            <img src="images/device.jpg" alt="">
+            <div class="team-text">
+                <h2>Clean Device Display</h2>
+                <p>Illustrator/Photoshop</p>
+                <p>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="heading2">
+        <h1>Get in Touch</h1>
+    </div>
+
+
+    <!--Get now-->
+    <div class="hero">
+
+        <div class="content">
+            <small>Welcome to our</small>
+            <h1>World's <br> Business Service</h1>
+            <button type="button">Get Now<a href="contact.html">.b</a>
+                    </button>
+
+        </div>
+    </div>
+
+    <footer>
+        Web Student ©2021. All Rights Reserved
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
